@@ -1,18 +1,29 @@
+import java.util.Scanner;
+
 public class Arithmatic {
     public static void main(String[] args) {
-        int a = 8;
-        int b = 5;
-        System.out.println(a + b);
-        System.out.println(a - b);
-        System.out.println(a * b);
-        System.out.println(a / b);
-        System.out.println(a%b);
-        double x = 5;
-        double y = 2;
-        System.out.println(x+y);
-        System.out.println(x - y);
-        System.out.println(x * y);
-        System.out.println(x / y);
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Welcome to Arithmatic calculator\n");
+        System.out.println("Please enter first number: ");
+        int first = input.nextInt();
+        System.out.println("Now , please enter second number: ");
+        int second = input.nextInt();
+
+        int add = first + second;
+        int sub = first - second;
+        int mul = first * second;
+        int div = first / second;
+        int mod = first % second;
+
+        System.out.println("Addition is :" + add);
+        System.out.println("Subtraction is :" + sub);
+        System.out.println("Multiplication is :" + mul);
+        System.out.println("Division is :" + div);
+        System.out.println("Modulus is :" + mod);
+
+
+
     }
 }
-
